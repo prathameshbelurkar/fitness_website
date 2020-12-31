@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PB Fitness</title>
+    <style>
+        body{
+            font-family: Lucida 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Arial, Helvetica, sans-serif;
+            margin: 0px;
+            padding: 0px;
+            color: white;
+            background: url(img01.jpg) center center/cover;
+        }
+        
+        .left{
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 7px;
+            top: -8px;
+            
+        }
+        
+        .left #logo{
+            width: 131px;
+            filter: invert(100%);
+            top: 20px;
+
+        }
+
+        .left div{
+            text-align: center;
+        }
+
+        .mid{
+            display: block;
+            /* border: 2px solid green; */
+            width: 44%;
+            margin: 22px auto;
+           
+            
+        }
+        
+        .right{
+            position: absolute;
+            /* border: 2px solid yellow; */
+            display: inline-block;
+            right: 34px;
+            top: 22px;
+        }
+
+        .navbar{
+            display: inline-block;
+            list-style: none;
+        }
+
+        .navbar li{
+            display: inline-block;
+            font-size: 21px;
+        }
+
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            padding: 8px 22px;
+        }
+
+        .navbar li a:hover, .navbar li a:active{
+            text-decoration: underline;
+            color: grey;
+        }
+
+        .left div p{
+            clear: both;
+            float: top;
+            font-size: 19px;
+        }
+
+        .btn{
+            font-family: Arial 'Narrow' , Helvetica, sans-serif;
+            /*font-family: Lucida 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Arial, Helvetica, sans-serif;*/
+            margin: 9px;
+            padding: 6px;
+            background-color: black;
+            color: white;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn:hover{
+            background-color: rgb(37, 37, 37);
+            
+        }
+
+        .container{
+            
+            display: inline-block;
+            border: 5px solid white;
+            border-radius: 10px;
+            margin: 11%;
+            padding: 2%;
+            width: 33% ;
+
+        }
+
+        .form_group input{
+            font-size: 20px;
+            width: 67%;
+            margin: 6px;
+            text-align: center;
+            font-weight: bold;
+            margin-left: 13%;
+            border-radius: 9px;
+        }
+
+        .container button{
+            width: 64%;
+            margin: 13px;
+            margin-left: 13%;
+        }
+
+        .container h2{
+            font-family: Arial 'Narrow' , Helvetica, sans-serif;
+            font-size: 32px;
+            margin-left: 7%;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+
+        <div class="left">
+            <img src="logo.png" alt="" id="logo">
+            <div> <p>PB Fitness</p></div>
+            
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li> <a href="#">Home</a> </li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            
+        </div>
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+
+    </header>
+
+    <div class="container">
+        <h2>Join The Best Gym Of Pune Now!</h2>
+        <form action="backend.php">
+            <div class="form_group">
+                <input type="text" placeholder="Enter Your Name">
+            </div>
+            <div class="form_group">
+                    <input type="text" placeholder="Enter Your Age">
+            </div>
+            <div class="form_group">
+                    <input type="text" placeholder="Enter Your Gender">
+            </div>
+            <div class="form_group">
+                    <input type="text" placeholder="Enter Your Locality">
+            </div>
+            <button class="btn">Submit</button>
+
+        </form>
+    </div>
+</body>
+</html>
